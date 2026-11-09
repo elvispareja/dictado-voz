@@ -6,8 +6,9 @@ se escribe en la ventana donde estabas (WhatsApp, Messenger, el navegador,
 ChatGPT, Word...). La voz se reconoce en tu PC, sin internet (usa Whisper).
 
 INSTALACION (una sola vez)
-1. Instala Python 3.12 desde https://www.python.org/downloads/
+1. Instala Python (cualquier version) desde https://www.python.org/downloads/
    IMPORTANTE: marca la casilla "Add python.exe to PATH".
+   El instalador descarga aparte Python 3.12 solo para esta app.
 2. Copia esta carpeta a tu PC con Windows.
 3. Doble clic en instalar.bat y espera a que termine.
 
