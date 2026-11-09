@@ -1,0 +1,38 @@
+DICTADO POR VOZ PARA WINDOWS
+============================
+
+Pulsas Ctrl+Shift+Z, hablas, vuelves a pulsar Ctrl+Shift+Z y lo que dijiste
+se escribe en la ventana donde estabas (WhatsApp, Messenger, el navegador,
+ChatGPT, Word...). La voz se reconoce en tu PC, sin internet (usa Whisper).
+
+INSTALACION (una sola vez)
+1. Instala Python 3.12 desde https://www.python.org/downloads/
+   IMPORTANTE: marca la casilla "Add python.exe to PATH".
+2. Copia esta carpeta a tu PC con Windows.
+3. Doble clic en instalar.bat y espera a que termine.
+
+USO
+1. Doble clic en iniciar.bat. Aparece un icono de microfono junto al reloj.
+   La primera vez descarga el modelo de voz (~460 MB) y tarda unos minutos.
+2. Icono verde = listo. Ve a tu chat y haz clic en la caja de texto.
+3. Pulsa Ctrl+Shift+Z (pitido agudo, icono rojo) y habla.
+4. Pulsa Ctrl+Shift+Z otra vez (pitido grave, icono amarillo).
+   En unos segundos el texto aparece en el chat.
+   Esc cancela la grabacion.
+5. Para cerrar: clic derecho en el icono -> Salir.
+
+AJUSTES (archivo config.json, se crea al primer inicio)
+  "atajo":            la combinacion de teclas, ej. "ctrl+alt+d"
+  "idioma":           "es" espanol, "en" ingles, "" para detectarlo solo
+  "modelo":           "base" (rapido), "small" (equilibrado), "medium" (mas preciso, lento)
+  "dispositivo":      "cpu", o "cuda" si tienes tarjeta NVIDIA con CUDA instalado
+  "enviar_con_enter": true para que pulse Enter y envie el mensaje solo
+  "sonidos":          false para quitar los pitidos
+Despues de cambiarlo, cierra la app (Salir) y abrela otra vez.
+
+NOTAS
+- Mientras la app esta abierta, Ctrl+Shift+Z deja de funcionar como "rehacer"
+  en otros programas. Si te molesta, cambia el atajo en config.json.
+- No escribe en ventanas abiertas "como administrador" salvo que ejecutes la
+  app tambien como administrador.
+- Si algo falla, revisa el archivo dictado.log de esta carpeta.
